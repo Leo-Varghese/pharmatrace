@@ -1,162 +1,60 @@
-# Pharmatrace 💊🔍
+# PharmaTrace 💊
 
-### QR-Based Medicine Authentication & Counterfeit Detection Platform
+> A QR-based medicine verification and traceability prototype selected among the **Top 30 teams at MUJ HackX 4.0**.
 
-**MUJ HackX 4.0 Submission**
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open-0A7C66?style=for-the-badge)](https://pharmatracer-universal.lovable.app/)
+[![Recognition](https://img.shields.io/badge/MUJ_HackX_4.0-Top_30-7C3AED?style=for-the-badge)](https://lnkd.in/p/gfzPBrMn)
+[![Source Code](https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github)](https://github.com/Leo-Varghese/pharmatrace)
 
-| Details | Information |
-|----------|------------|
-| Team Name | muiwaleproteinlovers |
-| Team ID | TEAM005 |
+## Recognition
+
+PharmaTrace was selected among the **Top 30 teams at MUJ HackX 4.0**.
+
+| Competition Details | Information |
+|---|---|
+| Hackathon | MUJ HackX 4.0 |
+| Team Name | `muiwaleproteinlovers` |
+| Team ID | `TEAM005` |
 | Problem Statement | Counterfeit Medicine Prevention |
 | Theme | Blockchain for Social Good |
+| Result | Top 30 Teams |
 
----
+- [View the MUJ HackX 4.0 recognition post](https://lnkd.in/p/gfzPBrMn)
+- [Open the live prototype](https://pharmatracer-universal.lovable.app/)
 
-## 🌐 Live Demo
+## Overview
 
-🔗 **Demo Website**
+PharmaTrace is a hackathon prototype exploring how QR-based pack identities and digital supply-chain records could help consumers, pharmacies, manufacturers, and regulators identify suspicious medicines.
 
-**[Pharmatrace Live Demo](https://pharmatracer-universal.lovable.app/)**
+The application demonstrates a medicine-verification journey capable of representing:
 
----
+- Genuine medicine packs
+- Copied or duplicated serial numbers
+- Expired products
+- Recalled products
+- Unknown serial numbers
+- Missing or stolen inventory
+- Pharmacy mismatches
+- Products under investigation
 
-## 📖 Overview
+PharmaTrace was rapidly developed for MUJ HackX 4.0 as a concept demonstration. The current prototype is not connected to a production pharmaceutical network, government registry, manufacturer database, or operational blockchain.
 
-Pharmatrace is a QR-based medicine authentication and counterfeit detection platform designed to improve transparency, traceability, and trust across the pharmaceutical supply chain.
+## Problem
 
-The platform enables manufacturers, pharmacies, regulators, and consumers to verify medicine authenticity through secure QR verification and complete supply-chain tracking.
+Counterfeit and incorrectly traced medicines can create serious public-safety risks. Consumers and other supply-chain participants may have limited ability to determine:
 
----
+- Whether a medicine-pack identifier exists in an authorised record
+- Whether the medicine moved through the expected supply chain
+- Whether the pack was sold through the recorded pharmacy
+- Whether an identifier has already been used
+- Whether a product is expired or recalled
+- Whether a pack was reported missing, stolen, quarantined, or under review
 
-## 🚨 Problem Statement
+## Proposed Solution
 
-Counterfeit medicines continue to pose a serious threat to public health worldwide.
+PharmaTrace assigns a digital record to each simulated medicine pack and demonstrates a QR-based verification workflow.
 
-Key challenges include:
-
-- Counterfeit medicine circulation
-- Supply chain transparency gaps
-- Medicine diversion and theft
-- Inadequate recall tracking
-- Limited consumer verification mechanisms
-- Difficulty tracing medicine movement
-
----
-
-## 💡 Proposed Solution
-
-Pharmatrace creates a unique digital identity for every medicine pack and records its movement across the pharmaceutical supply chain.
-
-Using QR-based verification, users can instantly:
-
-✅ Verify medicine authenticity
-
-✅ View complete supply-chain history
-
-✅ Confirm the selling pharmacy
-
-✅ Check expiry status
-
-✅ View recall information
-
-✅ Detect suspicious or duplicated records
-
----
-
-## 🔄 How It Works
-
-```text
-Manufacturer
-      ↓
-Batch Creation
-      ↓
-Pack Serial Generation
-      ↓
-Shipment Tracking
-      ↓
-Pharmacy Stock Verification
-      ↓
-Medicine Sale
-      ↓
-Consumer QR Scan
-      ↓
-Verification Engine
-      ↓
-Verification Result
-```
-
----
-
-## ✨ Key Features
-
-### 🏪 Shop Verification
-
-- Discover nearby pharmacies
-- Pharmacy trust indicators
-- Verification status badges
-- Risk alerts for suspicious stores
-- Map-based exploration
-
-### 📱 QR Medicine Verification
-
-- QR-based medicine authentication
-- Supply-chain verification
-- Duplicate sale detection
-- Counterfeit detection alerts
-- Pharmacy verification
-
-### 📊 Analytics Dashboard
-
-- Verification analytics
-- Counterfeit monitoring
-- Risk intelligence
-- Scan trends
-- Audit trail visibility
-
----
-
-## 📦 Medicine Lifecycle
-
-```text
-MANUFACTURED
-      ↓
-IN_TRANSIT
-      ↓
-IN_STOCK
-      ↓
-SOLD
-```
-
-### Additional Statuses
-
-- EXPIRED
-- RECALLED
-- MISSING
-- STOLEN
-- QUARANTINED
-- UNDER_REVIEW
-
----
-
-## 🔍 Verification Logic
-
-Each verification validates:
-
-- Exact pack serial number
-- Complete supply-chain history
-- Selling pharmacy records
-- Duplicate sale detection
-- Recall status
-- Expiry status
-- Missing or stolen reports
-- Store mismatch detection
-
----
-
-## ✅ Verification Outcomes
-
-Pharmatrace supports multiple verification results:
+A verification request compares the scanned or entered identifier with prototype records and returns an understandable status, such as:
 
 - Supply Chain Verified
 - Suspicious
@@ -169,164 +67,295 @@ Pharmatrace supports multiple verification results:
 - Package Unreadable
 - Service Unavailable
 
----
+The prototype focuses on making traceability information easier for consumers to understand while demonstrating possible manufacturer, pharmacy, and regulatory workflows.
 
-## 🧪 Demonstration Scenarios
+## How It Works
 
-The prototype demonstrates:
+```text
+Manufacturer
+    ↓
+Batch Creation
+    ↓
+Pack Serial Generation
+    ↓
+Shipment Tracking
+    ↓
+Pharmacy Stock Verification
+    ↓
+Medicine Sale
+    ↓
+Consumer QR Verification
+    ↓
+Verification Engine
+    ↓
+Verification Result
+```
 
-- Genuine Medicine Pack
-- Copied Serial Number
-- Expired Medicine
-- Recalled Product
-- Unknown Serial
-- Missing Inventory
-- Stolen Product
-- Store Mismatch
-- Under Review Investigation
-- Verification Service Failure
+## Key Features
 
----
+### Medicine Verification
 
-## ⛓️ Blockchain for Social Good
+- QR-oriented medicine authentication flow
+- Pack-serial validation
+- Supply-chain timeline review
+- Duplicate-serial and duplicate-sale scenarios
+- Expiry and recall checks
+- Pharmacy mismatch detection
+- Missing and stolen inventory alerts
 
-Pharmatrace aligns with the Blockchain for Social Good theme by enabling transparent, tamper-resistant medicine traceability.
+### Pharmacy Discovery
 
-Blockchain integration can provide:
+- Pharmacy discovery interface
+- Map-oriented exploration
+- Verification-status indicators
+- Trust and risk indicators
+- Suspicious-store warning scenarios
 
-- Immutable audit records
-- Enhanced transparency
-- Improved trust among stakeholders
-- Secure transaction history
-- Stronger compliance and governance
+### Analytics Dashboard
 
----
+- Verification activity overview
+- Scan and status trends
+- Counterfeit-risk monitoring concepts
+- Audit-trail visibility
+- Supply-chain status summaries
 
-## 👥 Stakeholders
+## Medicine Lifecycle
 
-### 🏭 Manufacturers
+```text
+MANUFACTURED
+    ↓
+IN_TRANSIT
+    ↓
+IN_STOCK
+    ↓
+SOLD
+```
+
+Additional supported prototype states include:
+
+- `EXPIRED`
+- `RECALLED`
+- `MISSING`
+- `STOLEN`
+- `QUARANTINED`
+- `UNDER_REVIEW`
+
+## Verification Logic
+
+The prototype verification flow can evaluate:
+
+- Exact pack serial number
+- Available supply-chain history
+- Recorded selling pharmacy
+- Duplicate-use indicators
+- Recall status
+- Expiry status
+- Missing or stolen reports
+- Store mismatch indicators
+- Investigation status
+
+## Demonstration Scenarios
+
+PharmaTrace includes prototype scenarios for:
+
+1. Genuine medicine pack
+2. Copied serial number
+3. Expired medicine
+4. Recalled product
+5. Unknown serial number
+6. Missing inventory
+7. Stolen product
+8. Store mismatch
+9. Product under investigation
+10. Verification-service failure
+
+## Stakeholders
+
+### Manufacturers
+
 - Create batches
-- Generate serial numbers
-- Ship products
+- Generate pack serial numbers
+- Record shipments
 - Initiate recalls
 
-### 🏪 Pharmacies
+### Pharmacies
+
 - Receive shipments
-- Verify medicine stock
-- Sell medicines
+- Verify stock
+- Record medicine sales
 - Report missing or stolen inventory
 
-### 👤 Consumers
-- Verify medicine authenticity
-- Check supply-chain history
-- Detect suspicious products
+### Consumers
 
-### 🏛️ Regulators
-- Monitor compliance
+- Verify a medicine pack
+- Review available traceability history
+- Identify suspicious statuses
+
+### Regulators
+
+- Monitor compliance indicators
 - Investigate counterfeit activity
-- Track recalls
-- Improve public safety
+- Track recalls and flagged products
+- Review supply-chain events
 
----
+## Proposed Blockchain Architecture
 
-## 🛠️ Technology Stack
+PharmaTrace was submitted under the **Blockchain for Social Good** theme.
 
-### Frontend
-- Lovable AI
+A future production architecture could use a permissioned ledger to record selected supply-chain events, including:
+
+- Batch creation
+- Pack-serial registration
+- Custody transfers
+- Pharmacy receipt confirmation
+- Product sale
+- Recall notices
+- Missing or stolen reports
+- Regulatory-review events
+
+This could provide tamper-evident audit records and stronger accountability between authorised participants.
+
+> **Prototype limitation:** The current hackathon prototype demonstrates the intended workflow and verification experience. It does not operate a production blockchain network or write pharmaceutical events to an immutable ledger.
+
+## Technology and Development Stack
+
+### Application
+
 - React
 - TypeScript
 - Tailwind CSS
+- Responsive, mobile-first interface
 
-### APIs & Services
-- Google Maps API
-- Google Places API
+### Development Platform
 
-### Design
-- Mobile-First Interface
-- Responsive Design
-- Dark Healthcare Theme
-- Glassmorphism UI Components
+- Lovable for rapid frontend prototyping and workflow development
 
----
+### Maps and Location
 
-## 🚀 Development Approach
+- Google Maps and Google Places concepts for pharmacy discovery
+- Actual API availability depends on the configuration used by the deployed demonstration
 
-Pharmatrace was rapidly prototyped using **Lovable AI** to validate the concept and demonstrate the complete user journey.
+### Current Prototype Scope
 
-Lovable AI was used for:
+- Demonstration data and verification scenarios
+- Simulated medicine lifecycle
+- Simulated pharmacy and supply-chain records
+- Consumer-facing verification experience
+- Analytics and risk-monitoring interface
 
+## Implementation Status
+
+| Capability | Current Status |
+|---|---|
+| Responsive user interface | Implemented |
+| Medicine-verification journey | Implemented as a prototype |
+| Demonstration scenarios | Implemented with prototype data |
+| Pharmacy discovery interface | Prototype |
+| Supply-chain timeline | Simulated |
+| Duplicate-serial detection | Demonstrated through prototype scenarios |
+| Real camera-based QR scanning | Planned |
+| Production pharmaceutical database | Not implemented |
+| Live manufacturer integration | Not implemented |
+| Government or regulator integration | Not implemented |
+| Production blockchain ledger | Not implemented |
+| AI fraud-detection model | Planned |
+
+This table distinguishes the working demonstration from the proposed production architecture.
+
+## Development Approach
+
+PharmaTrace was rapidly prototyped using Lovable to validate the concept and demonstrate an end-to-end user journey within hackathon constraints.
+
+The development process focused on:
+
+- Problem framing
+- User-flow design
 - Interface generation
-- Frontend development
-- Workflow implementation
+- Responsive frontend implementation
+- Verification-scenario modelling
 - Dashboard construction
-- Responsive UI design
-- Rapid MVP development
+- Rapid MVP delivery
+- Hackathon presentation and demonstration
 
-This approach enabled faster prototyping while focusing on solving the real-world challenge of counterfeit medicine prevention.
+## Expected Impact
 
----
+A mature implementation could help:
 
-## 📈 Expected Impact
-
-- Reduce counterfeit medicine circulation
-- Improve patient safety
-- Increase consumer trust
-- Enhance medicine traceability
+- Improve medicine traceability
 - Strengthen recall management
-- Improve regulatory visibility
 - Increase supply-chain transparency
+- Support counterfeit-risk investigation
+- Improve consumer access to verification information
+- Increase accountability among authorised supply-chain participants
 
----
+These are expected outcomes of a future production system and were not independently measured by the current prototype.
 
-## 🌱 Future Scope
+## Future Scope
 
-- Real QR Camera Scanning
-- Blockchain-Based Audit Records
-- AI-Powered Fraud Detection
-- Government Integration Portals
-- Multi-Language Support
-- National Pharmacy Network Integration
-- Automated Recall Management
+- Camera-based QR scanning
+- Permissioned blockchain audit records
+- Secure production database
+- Manufacturer and pharmacy onboarding
+- Government and regulator portals
+- AI-assisted fraud-pattern detection
+- Multi-language support
+- Automated recall management
+- National pharmacy-network integration
+- Security, privacy, and compliance review
 
----
+## Limitations
 
-## ⚠️ Disclaimer
+The current version is a hackathon prototype and does not include:
 
-Pharmatrace validates supply-chain records and traceability information only.
+- A live pharmaceutical supply-chain network
+- Production manufacturer or pharmacy data
+- Government-registry integration
+- An operational blockchain ledger
+- Laboratory or chemical medicine verification
+- Regulatory approval
+- Independent security or clinical validation
 
-The platform does not verify:
+The current demonstration should not be used to make real-world medicine safety decisions.
+
+## Disclaimer
+
+PharmaTrace is an educational hackathon prototype.
+
+The application does not verify:
 
 - Chemical composition
 - Manufacturing quality
 - Storage conditions
-- Physical authenticity of medicine contents
+- Physical package integrity
+- Clinical safety or effectiveness
+- Whether a medicine is medically appropriate for a patient
 
-Digital verification complements existing pharmaceutical quality assurance processes.
+Digital traceability can complement, but cannot replace, pharmaceutical quality controls, laboratory testing, licensed healthcare advice, manufacturer verification, and regulatory oversight.
+
+A real implementation would require authorised data providers, pharmaceutical-industry participation, regulatory approval, security audits, privacy controls, operational governance, and extensive field validation.
+
+## Project Links
+
+- [Live PharmaTrace Demonstration](https://pharmatracer-universal.lovable.app/)
+- [GitHub Repository](https://github.com/Leo-Varghese/pharmatrace)
+- [MUJ HackX 4.0 Recognition Post](https://lnkd.in/p/gfzPBrMn)
+
+## Author
+
+**Leo Varghese**  
+B.Tech Computer Science and Engineering  
+Manipal University Jaipur
+
+## Project Journey
+
+PharmaTrace was an early hackathon prototype that helped develop experience in rapid product development, healthcare problem framing, workflow design, technical presentation, and building under time constraints.
+
+The Top 30 selection at MUJ HackX 4.0 provided external validation for the concept and became an important step toward building more complete full-stack applications.
+
+## Closing Note
+
+**Track every medicine. Verify every scan. Protect every patient.**
 
 ---
 
-## 🔗 Project Links
-
-### Live Demo
-**[Pharmatrace Demo Website](https://pharmatracer-universal.lovable.app/)**
-
-### GitHub Repository
-**[Pharmatrace Source Code](https://github.com/Leo-Varghese/pharmatrace)**
-
----
-
-## 👥 Team Information
-
-**Hackathon:** MUJ HackX 4.0  
-**Team Name:** muiwaleproteinlovers  
-**Team ID:** TEAM005  
-**Problem Statement:** Counterfeit Medicine Prevention  
-**Theme:** Blockchain for Social Good  
-
----
-
-# 💊 Pharmatrace
-
-### Ensuring Trust in Every Medicine.
-
-### Track Every Medicine. Verify Every Scan. Protect Every Patient.
+If this project is useful, consider starring the repository and sharing constructive feedback.
